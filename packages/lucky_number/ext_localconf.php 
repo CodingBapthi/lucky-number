@@ -1,0 +1,18 @@
+<?php
+defined('TYPO3_MODE') || die('Access denied.');
+
+call_user_func(function () {
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addModule(
+        'web',
+        'txluckyNumberM1',
+        '',
+        '',
+        [
+            'routeTarget' => \CodingBapthi\LuckyNumber\Controller\ModuleController::class . '::mainAction',
+            'access' => 'user,group',
+            'name' => 'web_txluckyNumberM1',
+            'icon' => 'EXT:lucky_number/Resources/Public/Icons/module-lucky-number.svg',
+            'labels' => 'LLL:EXT:lucky_number/Resources/Private/Language/locallang_mod.xlf',
+        ]
+    );
+});

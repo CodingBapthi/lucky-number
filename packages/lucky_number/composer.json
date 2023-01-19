@@ -1,0 +1,23 @@
+{
+  "name": "codingbapthi/lucky-number",
+  "type": "typo3-cms-extension",
+  "description": "A TYPO3 extension that generates a lucky number",
+  "keywords": ["typo3", "extension", "lucky", "number"],
+  "homepage": "https://github.com/CodingBapthi/lucky-number",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Coding Bapthi",
+      "email": "your.email@example.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "typo3/cms-core": "^10.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodingBapthi\\LuckyNumber\\": "Classes/"
+    }
+  }
+}
